@@ -21,12 +21,13 @@ from rest_framework_simplejwt.views import (
 )
 from django.contrib import admin
 from django.urls import path
-from .views import recommend_view, register_view
+from .views import recommend_view_input, register_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/register/', register_view, name='register'),
-    path('api/recommend/', recommend_view, name='recommend'),
+    path('api/recommend/', recommend_view_input, name='recommend'),
+    
 ]
