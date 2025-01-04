@@ -30,5 +30,5 @@ yarn-error.log*
 AI_Travel_Guide/db.sqlite3
 AI_Travel_Guide/AI_Travel_Guide/__pycache__/
 AI_Travel_Guide/AI_Travel_Guide/migrations/
-
+.gitignore
 
