@@ -1,0 +1,162 @@
+/* Navbar Styling */
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+    color: rgb(49, 2, 2);
+    font-size: 1.5rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+  }
+  
+  .navbar-links li {
+    position: relative;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links a, .dropdown-btn {
+    text-decoration: none;
+    color: rgb(42, 2, 2);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    
+  }
+  
+  .dropdown-btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    display: block;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu li {
+    margin: 0.5rem 0;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design 
+  @media (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column;
+      display: none;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  }
+   */
+  /* """""""""""""""""""""""""" */
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    color: rgb(49, 2, 2);
+    font-size: 1.5rem;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .navbar-links li{
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    position: relative;
+    display: flex;
+  }
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+  }
+  .navbar-links li::before,
+  .navbar-links li::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 0px solid transparent;
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease;
+}
+
+.navbar-links li::after {
+    top: 0;
+    left: 0;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+  }
+  
+  .navbar-links li::before {
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+  }
+  
+  .navbar-links li:hover::before,
+  .navbar-links li:hover::after {
+    width: 10px;
+    height: 10px;
+    border-color: #b76e00;
+  }
+
+  .dropdown-btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    display: block;
+    z-index: 1000;
+  }
+  .dropdown-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  

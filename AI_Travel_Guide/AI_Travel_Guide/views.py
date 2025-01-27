@@ -6,10 +6,10 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
 from rest_framework import status
 import json
+from django.core.cache import cache  
 
 @api_view(['POST'])
 def register_view(request):
-    pass
     print('reg called')
     try:
         data = request.data
@@ -26,7 +26,6 @@ def register_view(request):
             profile_picture=data['profile_picture'],
             username=data['name'],
         )
-        
         return Response({'message': 'User created successfully'}, status=status.HTTP_201_CREATED)
     
     except Exception as e:
@@ -46,6 +45,8 @@ def recommend_view_input(request):
         data['budget'] = int(data['budget'])
         data['duration'] = int(data['duration'])
 
+        # Save the data in cache (can be replaced with a database if needed)
+        cache.set('recommendation_data', data, timeout=3600)  # 1-hour timeout
         # Extract user data from the request
         user_data = data.get('user')
         if not user_data:
@@ -56,7 +57,7 @@ def recommend_view_input(request):
             auth0_user_id=user_data['sub'],  # Use unique identifier from Auth0
             defaults={
                 'email': user_data.get('email','sub'),
-                'name': user_data.get('name', 'Anonymous'),
+                'username': user_data.get('name', 'Anonymous'),
                 'profile_picture': user_data.get('picture', ''),
                 'email_verified': user_data.get('email_verified', False),
             }
@@ -81,17 +82,26 @@ def recommend_view_input(request):
 
         print('Preferences saved successfully!')
 
-        # Mock response - replace with actual API calls (e.g., Google Maps, Weather)
-        recommendations = {
-            "destinations": [
-                {"name": "Goa", "distance": 500, "cost": 10000, "duration": 3},
-                {"name": "Manali", "distance": 600, "cost": 15000, "duration": 5},
-            ],
-            "packing_checklist": ["Sunscreen", "Comfortable Shoes", "Raincoat"],
-        }
+        from backend.api.foursquare import recommend_api
+    
+        latitude, longitude, radius, budget = data['latitude'], data['longitude'], data['distance'], data['budget']
+        response = recommend_api(latitude, longitude, radius, budget)
 
-        return Response(recommendations)
+        destinations = []
+        for places in response['results']:
+            destinations.append({
+                "name":places['name'],
+                "address": places['location']['formatted_address'],
+                "categories": [category['id'] for category in places['categories']],
+                "fsq_id": places['fsq_id'],
+            })
+        
+        # print(destinations)
+        response = {
+            "destinations": destinations,
+            "packing_checklist": ["Clothes", "Snacks", "Camera", "Power Bank"]
+        }
+        return Response(response, status=200)
     except Exception as e:
         print("Error:", str(e))
         return Response({"error": str(e)}, status=500)
-

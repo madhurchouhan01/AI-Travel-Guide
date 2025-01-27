@@ -1,19 +1,20 @@
 import React, { useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import Travel from "./components/Travel";
-
+import Navbar from "./components/Navbar";
 
 function AuthHandler() {
   const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
   return isAuthenticated ? (
-    <button onClick={() => logout()} className="bg-green-400 text-black p-4 rounded xl">Logout</button>
+    <button onClick={() => logout()} >Logout</button>
   ) : (
-    <button onClick={() => loginWithRedirect()}className="bg-green-400 text-black p-4 rounded xl">Login</button>
+    <button onClick={() => loginWithRedirect()}>Login</button>
   );
 }
 
 function LoginButton() {
+
   const { user, isAuthenticated } = useAuth0(); 
 
   useEffect(() => {
@@ -50,19 +51,18 @@ function LoginButton() {
   }, [isAuthenticated, user]);
 
   return (
-    <>
+    <div className="app">
         <div className="authentication">
       <header className="auth-header">
+        <Navbar />
         {isAuthenticated && <>
         <h1>Hello, {user.name}👋</h1>
         <Travel/>
         </>}
         
-        <AuthHandler />
-        
       </header>
     </div>
-    </>
+    </div>
 
   );
 }

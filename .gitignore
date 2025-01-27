@@ -26,9 +26,7 @@ yarn-error.log*
 
 # backend----------------->
 /myenv/
-/backend/
 AI_Travel_Guide/db.sqlite3
 AI_Travel_Guide/AI_Travel_Guide/__pycache__/
 AI_Travel_Guide/AI_Travel_Guide/migrations/
-.gitignore
-
+AI_Travel_Guide/backend/
