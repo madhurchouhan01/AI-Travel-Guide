@@ -1,0 +1,294 @@
+{
+  "results": [
+    {
+      "fsq_id": "4cbe72be8db3b60cfe9b7278",
+      "categories": [
+        {
+          "id": 12103,
+          "name": "Hindu Temple",
+          "short_name": "Hindu Temple",
+          "plural_name": "Hindu Temples",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/religious_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "closed_bucket": "LikelyOpen",
+      "distance": 4293,
+      "geocodes": {
+        "main": {
+          "latitude": 22.686797,
+          "longitude": 75.83533
+        },
+        "roof": {
+          "latitude": 22.686797,
+          "longitude": 75.83533
+        }
+      },
+      "link": "/v3/places/4cbe72be8db3b60cfe9b7278",
+      "location": {
+        "address": "Annapurna",
+        "country": "IN",
+        "cross_street": "",
+        "formatted_address": "Annapurna, Indore 452018, Madhya Pradesh",
+        "locality": "Indore",
+        "postcode": "452018",
+        "region": "Madhya Pradesh"
+      },
+      "name": "Annapurna Temple",
+      "related_places": {
+        "children": [
+          {
+            "fsq_id": "5b698b981f744000395ad7c9",
+            "categories": [
+              {
+                "id": 11108,
+                "name": "IT Service",
+                "short_name": "IT Service",
+                "plural_name": "IT Services",
+                "icon": {
+                  "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/technology_",
+                  "suffix": ".png"
+                }
+              }
+            ],
+            "name": "Kudoss IT Solutions"
+          }
+        ]
+      },
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "fsq_id": "50f11526e4b0f9cd32576bcd",
+      "categories": [
+        {
+          "id": 10004,
+          "name": "Art Gallery",
+          "short_name": "Art Gallery",
+          "plural_name": "Art Galleries",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/artgallery_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "closed_bucket": "LikelyOpen",
+      "distance": 2128,
+      "geocodes": {
+        "main": {
+          "latitude": 22.703547,
+          "longitude": 75.846175
+        },
+        "roof": {
+          "latitude": 22.703547,
+          "longitude": 75.846175
+        }
+      },
+      "link": "/v3/places/50f11526e4b0f9cd32576bcd",
+      "location": {
+        "country": "IN",
+        "cross_street": "",
+        "formatted_address": "Indore 452007, Madhya Pradesh",
+        "locality": "Indore",
+        "postcode": "452007",
+        "region": "Madhya Pradesh"
+      },
+      "name": "Lalbagh Palace",
+      "related_places": {},
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "fsq_id": "4d6fb9b527316ea8c63bb4aa",
+      "categories": [
+        {
+          "id": 11033,
+          "name": "Employment Agency",
+          "short_name": "Employment Agency",
+          "plural_name": "Employment Agencies",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 12103,
+          "name": "Hindu Temple",
+          "short_name": "Hindu Temple",
+          "plural_name": "Hindu Temples",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/religious_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 12111,
+          "name": "Temple",
+          "short_name": "Temple",
+          "plural_name": "Temples",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/religious_temple_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 19029,
+          "name": "Tour Provider",
+          "short_name": "Tour Provider",
+          "plural_name": "Tour Providers",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/default_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 19055,
+          "name": "Travel Agency",
+          "short_name": "Travel Agency",
+          "plural_name": "Travel Agencies",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/travelagency_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "closed_bucket": "LikelyOpen",
+      "distance": 5293,
+      "geocodes": {
+        "main": {
+          "latitude": 22.730846,
+          "longitude": 75.90808
+        },
+        "roof": {
+          "latitude": 22.730846,
+          "longitude": 75.90808
+        }
+      },
+      "link": "/v3/places/4d6fb9b527316ea8c63bb4aa",
+      "location": {
+        "address": "Khajrana Temple",
+        "country": "IN",
+        "cross_street": "ring road",
+        "formatted_address": "Khajrana Temple (ring road), Indore 482001, Madhya Pradesh",
+        "locality": "Indore",
+        "postcode": "482001",
+        "region": "Madhya Pradesh"
+      },
+      "name": "Khajrana Ganesh Temple",
+      "related_places": {},
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "fsq_id": "645bc0fa15e91f362e0d7d64",
+      "categories": [
+        {
+          "id": 10024,
+          "name": "Movie Theater",
+          "short_name": "Movie Theater",
+          "plural_name": "Movie Theaters",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "closed_bucket": "LikelyOpen",
+      "distance": 8589,
+      "geocodes": {
+        "main": {
+          "latitude": 22.746596,
+          "longitude": 75.936243
+        }
+      },
+      "link": "/v3/places/645bc0fa15e91f362e0d7d64",
+      "location": {
+        "country": "IN",
+        "cross_street": "",
+        "formatted_address": "Indore 452016, Madhya Pradesh",
+        "locality": "Indore",
+        "postcode": "452016",
+        "region": "Madhya Pradesh"
+      },
+      "name": "Inox Imsignia Phoenix Citadel",
+      "related_places": {
+        "parent": {
+          "fsq_id": "63aae6b6b37abe7074f3287c",
+          "categories": [
+            {
+              "id": 17114,
+              "name": "Shopping Mall",
+              "short_name": "Mall",
+              "plural_name": "Shopping Malls",
+              "icon": {
+                "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/mall_",
+                "suffix": ".png"
+              }
+            }
+          ],
+          "name": "Phoenix Citadel"
+        }
+      },
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "fsq_id": "4b7799f3f964a5206ba32ee3",
+      "categories": [
+        {
+          "id": 16000,
+          "name": "Landmarks and Outdoors",
+          "short_name": "Landmarks and Outdoors",
+          "plural_name": "Landmarks and Outdoors",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "closed_bucket": "LikelyOpen",
+      "distance": 232,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 22.718482,
+          "longitude": 75.855887
+        },
+        "main": {
+          "latitude": 22.718458,
+          "longitude": 75.856007
+        },
+        "roof": {
+          "latitude": 22.718458,
+          "longitude": 75.856007
+        }
+      },
+      "link": "/v3/places/4b7799f3f964a5206ba32ee3",
+      "location": {
+        "address": "Rajwada Chouk",
+        "country": "IN",
+        "cross_street": "Jahawar Marg",
+        "formatted_address": "Rajwada Chouk (Jahawar Marg), Indore 452001, Madhya Pradesh",
+        "locality": "Indore",
+        "postcode": "452001",
+        "region": "Madhya Pradesh"
+      },
+      "name": "Rajwada",
+      "related_places": {},
+      "timezone": "Asia/Kolkata"
+    }
+  ],
+  "context": {
+    "geo_bounds": {
+      "circle": {
+        "center": {
+          "latitude": 22.7195687,
+          "longitude": 75.8577258
+        },
+        "radius": 50000
+      }
+    }
+  }
+}

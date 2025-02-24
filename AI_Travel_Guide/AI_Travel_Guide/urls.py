@@ -21,7 +21,7 @@ from rest_framework_simplejwt.views import (
 )
 from django.contrib import admin
 from django.urls import path
-from .views import recommend_view_input, register_view
+from .views import recommend_view_input, register_view,chatbot
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,5 +29,5 @@ urlpatterns = [
     path('api/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/register/', register_view, name='register'),
     path('api/recommend/', recommend_view_input, name='recommend'),
-    
+    path('api/chatbot/', chatbot,name='chatbot'),
 ]

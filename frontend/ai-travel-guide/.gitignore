@@ -1,11 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-# frontend ----------------->
 
 # dependencies
-frontend/ai-travel-guide/node_modules/
+/node_modules
 /.pnp
 .pnp.js
-tailwing.config.js
 
 # testing
 /coverage
@@ -23,9 +21,3 @@ tailwing.config.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# backend----------------->
-/myenv/
-AI_Travel_Guide/db.sqlite3
-AI_Travel_Guide/AI_Travel_Guide/__pycache__/
-AI_Travel_Guide/AI_Travel_Guide/migrations/

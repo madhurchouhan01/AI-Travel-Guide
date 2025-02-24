@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import Travel from "./components/Travel";
 import Navbar from "./components/Navbar";
+import Chatbot from "./components/TravelBot";
+import "./components/TravelBot.css";
 
 function AuthHandler() {
   const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
@@ -58,6 +60,7 @@ function LoginButton() {
         {isAuthenticated && <>
         <h1>Hello, {user.name}👋</h1>
         <Travel/>
+        <Chatbot />
         </>}
         
       </header>
