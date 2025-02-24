@@ -71,8 +71,14 @@ ollama serve
   ```
 
 ---
+## 4️⃣ **Database Migrations** 
+To apply database migrations, run the following commands:
 
-## 4️⃣ **Backend (Django) Initialization**  
+```sh
+python manage.py makemigrations AI_Travel_Guide
+python manage.py migrate
+```
+## 5️⃣ **Backend (Django) Initialization**  
 
 Navigate to the **backend project directory** (where `manage.py` is located):  
 ```bash
