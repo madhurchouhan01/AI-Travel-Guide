@@ -10,7 +10,7 @@
   }
   
   .chat-header {
-    background: #007bff;
+    background: #f10000;
     color: white;
     text-align: center;
     padding: 10px;
@@ -61,7 +61,7 @@
   }
   
   .chat-input button {
-    background: #007bff;
+    background: #ff0000;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -83,7 +83,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
+  background-color: rgb(93, 48, 255);
   color: white;
   border: none;
   padding: 15px;
@@ -123,7 +123,7 @@
 
 /* Chatbot Header */
 .chat-header {
-  background: #007bff;
+  background: rgb(93, 48, 255);
   color: white;
   padding: 10px;
   display: flex;
@@ -160,7 +160,7 @@
 
 /* User Messages */
 .chat-message.user {
-  background: #007bff;
+  background: rgb(93, 48, 255);
   color: white;
   align-self: flex-end;
 }
@@ -189,7 +189,7 @@
 
 .chat-input button {
   margin-left: 10px;
-  background: #007bff;
+  background: rgb(93, 48, 255);
   color: white;
   border: none;
   padding: 8px 15px;
