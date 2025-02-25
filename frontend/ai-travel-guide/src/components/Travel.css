@@ -16,7 +16,8 @@
 }
 
 .form h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 20px black;
     font-family:monospace;
 }
 
@@ -53,6 +54,10 @@
 .response {
     margin-top: 20px;
     animation: fade-in 0.5s ease-in;
+}
+
+h1{ 
+    color: black;
 }
 
 @keyframes fade-in {

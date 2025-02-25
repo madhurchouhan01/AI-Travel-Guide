@@ -8,7 +8,8 @@
 }
 
 .response-recom {
-    color: brown;
+    color: rgb(12, 0, 0);
+    font-weight: 700;
     font-size: 2rem;
     margin-bottom: 20px;
 }

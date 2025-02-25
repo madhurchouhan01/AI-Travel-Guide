@@ -75,7 +75,7 @@ const TravelForm = () => {
         <>
             <div className={`form-container ${moveUp ? 'move-up' : ''}`}>
                 <div className='form'>
-                    <h1>Plan Your Trip</h1>
+                    <h1>Plan Your Trip ⚡</h1>
                     <form onSubmit={handleSubmit}>
                         <div>
                             <label className='label'>Distance (in km)</label><br />

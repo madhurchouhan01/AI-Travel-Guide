@@ -82,13 +82,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1.5rem;
-    color: rgb(49, 2, 2);
+    padding: 1rem 1.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(93, 48, 255);
     font-size: 1.5rem;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
     position: sticky;
     top: 0;
     z-index: 1000; 
+    opacity: .8;
   }
   
   .navbar-logo {
@@ -96,7 +98,7 @@
     font-weight: bold;
   }
   .navbar-links li{
-    color: #000000;
+    color: #ffffff;
     font-size: 20px;
     text-decoration: none;
     padding: 10px 20px;
@@ -138,7 +140,7 @@
   .navbar-links li:hover::after {
     width: 10px;
     height: 10px;
-    border-color: #b76e00;
+    border-color: #ffffff;
   }
 
   .dropdown-btn {
