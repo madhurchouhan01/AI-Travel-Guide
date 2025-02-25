@@ -116,22 +116,29 @@ def chatbot(request):
 
     # Sending request to Ollama
     data = {"model": model_name, "prompt": user_prompt, "stream" : False}
-
-    response = requests.post(OLLAMA_URL, json=data)
-    print(response.text)
+    print(data)
     try:
-        response_json = response.json()  # Convert to a dictionary
-        print("Extracted response:", response_json.get("response", "No response found"))  # Extract chatbot reply
+        response = requests.post(OLLAMA_URL, json=data)
+        print(response)
+        if response.status_code == 200:
+            response_json = response.json()  # Convert response to JSON
+            
+            # Ensure response is a string
+            chatbot_reply = response_json.get("response", "No response found")
+            
+            if not isinstance(chatbot_reply, str):
+                chatbot_reply = str(chatbot_reply)  # Convert to string if necessary
+
+            return Response({"response": chatbot_reply})  # Always return a string response
+
+        else:
+            return Response({"error": "Failed to fetch response from Ollama"}, status=500)
 
     except json.JSONDecodeError as e:
-        print("Error decoding JSON:", e)
-    # Check if response is successful
-    if response.status_code == 200:
-        return Response(response_json)  # Return JSON response
-    else:
-        return Response({"error": "Failed to fetch response from Ollama"}, status=500)
-    
+        return Response({"error": f"Error decoding JSON: {str(e)}"}, status=500)
 
+    except Exception as e:
+        return Response({"error": str(e)}, status=500)
 # @api_view(['POST'])
 # def chatbot(request):
 #     """

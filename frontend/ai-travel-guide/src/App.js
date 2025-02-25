@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import "./App.css";
 import Travel from "./components/Travel";
 import Navbar from "./components/Navbar";
 import Chatbot from "./components/TravelBot";
+import Landing from "./components/Landing";
 import "./components/TravelBot.css";
 
 function AuthHandler() {
@@ -17,7 +19,7 @@ function AuthHandler() {
 
 function LoginButton() {
 
-  const { user, isAuthenticated } = useAuth0(); 
+  const { user, isAuthenticated } = useAuth0();
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -54,17 +56,24 @@ function LoginButton() {
 
   return (
     <div className="app">
-        <div className="authentication">
-      <header className="auth-header">
-        <Navbar />
-        {isAuthenticated && <>
-        <h1>Hello, {user.name}👋</h1>
-        <Travel/>
-        <Chatbot />
-        </>}
-        
-      </header>
-    </div>
+      <div className="authentication">
+        <header className="auth-header">
+          <Navbar />
+          {!isAuthenticated && <Landing />}
+          {isAuthenticated && <>
+            {/* <h1>Hello, {user.name}👋</h1> */}
+            <div id="main">
+              <div id="mainContent">
+                <Travel />
+              </div>
+              <div id="sideContent">
+                <Chatbot />
+              </div>
+            </div>
+          </>}
+
+        </header>
+      </div>
     </div>
 
   );

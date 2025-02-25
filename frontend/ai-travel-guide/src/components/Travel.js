@@ -3,6 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import './Travel.css';
 import Button from './Submit';
 import './Cards.css'
+import ReactMarkdown from "react-markdown"; 
 
 const TravelForm = () => {
     const [latitude, setLatitude] = useState(null);
@@ -10,6 +11,7 @@ const TravelForm = () => {
     const [loading, setLoading] = useState(false);
     const [response, setResponse] = useState(null);
     const [moveUp, setMoveUp] = useState(false); // Added state for moving the form up
+    const markdownText = `This is **markdown text**`
 
     const { user } = useAuth0();
 
@@ -128,7 +130,7 @@ const TravelForm = () => {
                             {response.destinations?.map((dest, index) => (
                                 <div className='card' key={index}>
                                     <h2>{dest.name}</h2>
-                                    <p><strong>Address:</strong> {dest.address} km</p>
+                                    <p><strong>Address:</strong> {dest.address}</p>
                                     <p><strong>Cost:</strong> {dest.categories[0] === 12103 ? "Free" : "₹00.00"}</p>
                                     <p><strong>Duration:</strong> {dest.duration} days</p>
                                     <p>Find more places</p>

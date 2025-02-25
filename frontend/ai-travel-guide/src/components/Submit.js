@@ -22,7 +22,7 @@ const StyledWrapper = styled.div`
     height: 60px;
     border-radius: 12px;
     border: none;
-    background-color: rgb(0, 76, 255);
+    background-color: rgb(93, 48, 255);
     display: flex;
     align-items: center;
     justify-content: center;
